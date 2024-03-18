@@ -10,6 +10,18 @@ namespace PalindromeChecker
         {
             Console.Write("Enter a word to check if it's a palindrome: ");
             string input = Console.ReadLine();
+
+            bool isPalindrome = IsPalindrome(input);
+            
+            if (isPalindrome)
+            {
+                Console.WriteLine($"'{input}' is a palindrome.");
+            }
+            else
+            {
+                Console.WriteLine($"'{input}' is not a palindrome.");
+            }
+        }
             
         }
 
