@@ -4,6 +4,14 @@ namespace AverageCalculator
 {
     class AvarageCalculator
     {
+       static void Main(string[] args)
+        {
+            int[] numbers = { 1, 2, 3, 4, 5 };
+            
+            double average = CalculateAverage(numbers);
+            
+            Console.WriteLine($"The average is: {average}");
+        }
         public static double CalculateAverage(int[] array)
         {
             if (array == null || array.Length == 0)
