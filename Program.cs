@@ -5,7 +5,7 @@
                 throw new ArgumentException("Array cannot be null or empty.", nameof(array));
             }
 
-            double max = array[0];
+            float max = array[0];
             foreach (int value in array)
             {
                 if (value > max)
