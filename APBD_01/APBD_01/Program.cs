@@ -12,6 +12,23 @@ namespace PalindromeChecker
             string input = Console.ReadLine();
             
         }
+
+        
+        static bool IsPalindrome(string word)
+        {
+            string processedWord = word.Replace(" ", "").ToLower();
+            int length = processedWord.Length;
+            
+            for (int i = 0; i < length / 2; i++)
+            {
+                if (processedWord[i] != processedWord[length - i - 1])
+                {
+                    return false;
+                }
+            }
+            
+            return true;
+        }
         
     }
 }
